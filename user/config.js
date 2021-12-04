@@ -12,6 +12,7 @@
  *
  * 	> Documentation: https://discordtickets.app
  * 	> Discord support server: https://go.eartharoid.me/discord
+ *      > Fork that can be hosted on railway: https://github.com/AnonDev-org/discord_tickets-bot-railway/
  *
  * ###############################################################################################
  */
@@ -27,7 +28,7 @@ module.exports = {
 	developer: { debug: false },
 	locale: 'en-GB',
 	logs: {
-		enabled: true,
+		enabled: false,
 		keep_for: 30,
 		split: true
 	},
