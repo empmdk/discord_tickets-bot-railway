@@ -37,7 +37,7 @@ If you don't see your repo there, click on "Configure the Railway app on GitHub"
      * `DB_PORT` -  copy the variable that is set as `MYSQLPORT` in MySQL preset variables
      * `DB_USER` -  copy the variable that is set as `MYSQLUSER` in MySQL preset variables
      * `DB_PASS` -  copy the variable that is set as `MYSQLPASSWORD` in MySQL preset variables
-     * `DB_NAME` - set to `discord-tickets`
+     * `DB_NAME` - copy the variable that is set as `MYSQLDATABASE` in MySQL preset variables
       You can find those MySQL preset variables in Variables. 
      After adding the variables click on deployments and wait until its re-deployed.
 
