@@ -5,8 +5,8 @@ logs/
 site/
 
 # files
-.env
+# .env
 version
-user/config.js
+# user/config.js
 user/database.sqlite
 user/plugins/*/
