@@ -10,9 +10,11 @@
  *       Support
  * ---------------------
  *
- * 	> Documentation: https://discordtickets.app
- * 	> Discord support server: https://go.eartharoid.me/discord
+ * 	> Official documentation: https://discordtickets.app
+ * 	> Official Discord support server: https://go.eartharoid.me/discord
+ *
  *      > Fork that can be hosted on railway: https://github.com/AnonDev-org/discord_tickets-bot-railway/
+ *      > Support creator of fork and guide: https://ko-fi.com/anondev
  *
  * ###############################################################################################
  */
@@ -23,7 +25,8 @@ module.exports = {
 		colour: '#009999',
 		log_messages: true,
 		name_format: 'ticket-{number}',
-		opening_message: 'Hello {name}, thank you for creating a ticket. A member of staff will soon be available to assist you.\n\n__All messages in this channel are stored for future reference.__'
+		opening_message: 'Hello {name}, thank you for creating a ticket. A member of staff will soon be available to assist you.\n\n__All messages in this channel are stored for future reference.__',
+		footer: "Discord Tickets hosted on railway"
 	},
 	developer: { debug: false },
 	locale: 'en-GB',
