@@ -45,7 +45,7 @@
 		"semver": "^7.3.5",
 		"sequelize": "^6.6.5",
 		"terminal-link": "^2.1.1",
-		"mysql2": "^2.3.0",
+		"mysql2": "^2.3.0"
 	},
 	"devDependencies": {
 		"all-contributors-cli": "^6.20.0",
