@@ -46,30 +46,17 @@ const checkFile = (file, example) => {
 
 checkFile('./user/config.js', './user/example.config.js');
 
-if (!checkFile('./.env', './example.env')) {
-	console.log('Generating database encryption key...');
-
-	const file = path('./.env');
-	const crypto = require('crypto');
-
-	const key = 'DB_ENCRYPTION_KEY=';
-	const value = crypto
-		.randomBytes(24)
-		.toString('hex');
-
-	let data = fs.readFileSync(file, { encoding: 'utf-8' });
-	data = data.replace(key, key + value);
-
-	fs.writeFileSync(file, data);
-
-	console.log('Saved.');
-	console.log(leeks.colours.yellow('Warning: do not lose your ENV file or encryption key; you will lose access to data in the database.'));
-	console.log('\x07Please set your bot\'s "DISCORD_TOKEN" in "./.env".');
-
+if (!process.env.DB_ENCRYPTION_KEY) {
+	console.log('\x07Please set "DB_ENCRYPTION_KEY" env variable, you can use UUIDv4 for it - generate on https://uuidonline.com');
+	process.exit();
+}
+if(!process.env.DISCORD_TOKEN) {
+	console.log('\x07Please set your bot\'s "DISCORD_TOKEN" env variable');
 	process.exit();
 }
 
-require('dotenv').config({ path: path('./.env') });
+
+require('dotenv').config();
 
 require('./banner')();
 
