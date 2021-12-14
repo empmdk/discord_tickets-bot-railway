@@ -41,6 +41,15 @@ module.exports = async client => {
 		});
 		client.config.defaults.log_messages = false;
 		client.log.warn('Message logging is disabled due to insufficient database');
+	}
+		if (type === 'mysql') {
+		client.log.info('Using MySQL Database...');
+		sequelize = new Sequelize(process.env.MYSQLDATABASE || DB_NAME, process.env.MYSQLUSER || DB_USER, process.env.MYSQLPASSWORD || DB_PASS, {
+			dialect: types[type].dialect,
+			host: process.env.MYSQLHOST || DB_HOST,
+			logging: text => client.log.debug(text),
+			port: process.env.MYSQLPORT || DB_PORT
+		});
 	} else {
 		client.log.info(`Connecting to ${types[type].name} database...`);
 		sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASS, {
