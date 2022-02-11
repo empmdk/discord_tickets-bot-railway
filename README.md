@@ -32,7 +32,7 @@ Discord Tickets docs: https://discordtickets.app
 - 🎉 Your Discord tickets bot should be online now, you can  [configure](https://discordtickets.app/configuration/categories/) your bot now.
 
 
-If you need help you can open new modmail support thread on [Pinglik Support Server](https://pinglik.eu/support) and we will help you 😉. You can also ping me on [Discord Tickets Discord](https://discord.gg/nMrWd8aZaP) server
+If you need help you can join [Pinglik Support Server](https://pinglik.eu/support) and ask for help in `#💛｜coding-help-support` channel and we will help you 😉
 
 If you would like to support me:<br>
 <a href='https://ko-fi.com/J3J72WPRC' target='__blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi2.png?v=2' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
